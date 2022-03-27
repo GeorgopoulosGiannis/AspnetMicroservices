@@ -6,21 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="Controllers\" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Npgsql" />
+    <None Remove="Dapper" />
     <None Remove="Entities\" />
-    <None Remove="Microsoft.Extensions.Caching.StackExchangeRedis" />
-    <None Remove="Newtonsoft.Json" />
     <None Remove="Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="Npgsql" Version="6.0.3" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
   </ItemGroup>
 </Project>
