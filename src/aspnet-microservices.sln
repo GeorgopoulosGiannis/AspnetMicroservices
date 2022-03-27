@@ -3,15 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.18
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4CA0867F-ED59-45F0-AF70-F5E22894585C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{40AE67BF-0DF2-49CA-9C13-CD6B1F0DF895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{1352E0B9-D7F1-4E02-B4DB-F578B76EA237}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{34734253-6E81-4566-A928-9F6C40E17F2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1352E0B9-D7F1-4E02-B4DB-F578B76EA237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1352E0B9-D7F1-4E02-B4DB-F578B76EA237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1352E0B9-D7F1-4E02-B4DB-F578B76EA237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1352E0B9-D7F1-4E02-B4DB-F578B76EA237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34734253-6E81-4566-A928-9F6C40E17F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34734253-6E81-4566-A928-9F6C40E17F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34734253-6E81-4566-A928-9F6C40E17F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34734253-6E81-4566-A928-9F6C40E17F2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {642DAAB5-B8BF-4D9D-B60A-6717346705B5}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40AE67BF-0DF2-49CA-9C13-CD6B1F0DF895} = {4CA0867F-ED59-45F0-AF70-F5E22894585C}
+		{1352E0B9-D7F1-4E02-B4DB-F578B76EA237} = {40AE67BF-0DF2-49CA-9C13-CD6B1F0DF895}
 	EndGlobalSection
 EndGlobal
